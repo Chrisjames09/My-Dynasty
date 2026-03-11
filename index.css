@@ -8,10 +8,19 @@ body{
 
 /* Hero Section */
 #google_translate_element {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 9999;
+    
+    position:fixed;
+    top:20px;
+    right:30px;
+    z-index:9999;
+}
+
+body{
+top:0px !important;
+}
+
+.goog-te-banner-frame{
+display:none !important;
 }
 
 .hero{
