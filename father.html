@@ -1,11 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<p style="display: block;"><b><a href="index.html">Back to Home Page</a></b></p>
+
+<div id="google_translate_element"></div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+<title>U Bo Htwe | Life Timeline</title>
+
+<link rel="stylesheet" href="father.css">
+
 </head>
+
 <body>
-    <p>"ဒါက မပြီးသေးဘူး၊ မနက်ဖြန်လောက်မှ ပြန်ကြည့်လိုက်၊ ပြီးချင်မှလည်း ပြီးမှာနော် lol!"</p>
+  
+
+<header class="hero">
+    <h1>The Life of U Bo Htwe</h1>
+    <p>From Kyauk Sin Village to a Life of Many Journeys</p>
+</header>
+
+    <button id="musicBtn" onclick="toggleMusic()">He composed this Song</button>
+
+<audio id="bgMusic" loop>
+    <source src="Music/Kha Yaung Lan Moh.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {pageLanguage: 'en', includedLanguages: 'my,en'},
+    'google_translate_element'
+  );
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+let music = document.getElementById("bgMusic");
+let btn = document.getElementById("musicBtn");
+
+function toggleMusic(){
+    if(music.paused){
+        music.play();
+        btn.innerHTML = "🔇 Stop Music";
+    } else {
+        music.pause();
+        btn.innerHTML = "🎵 Play Music";
+    }
+}
+</script>
+<section class="timeline">
+
+<!-- Birth -->
+<div class="container left">
+    <div class="content">
+        <h2>1970 — A Beginning</h2>
+        <p>
+        Born on <b>July 23, 1970</b><br>
+        (ဝါဆိုလဆုတ် ၅ ရက် ၁၃၃၂)
+        </p>
+        <p>
+        In the small fishing village of <b>Kyauk Sin</b>, a boy was born who
+        would later become one of the few people from the village to graduate
+        with a university degree.
+        </p>
+        <img src="Pics/IMG_2730.JPG" alt="U Bo Htwe as a child" style="width: 100%; height: auto; border-radius: 10px;">
+    </div>
+</div>
+
+<!-- Childhood -->
+<div class="container right">
+    <div class="content">
+        <h2>Childhood</h2>
+        <p>
+        Growing up in Kyauk Sin, life revolved around the sea.
+        Boats, fishing nets, and the rhythm of village life shaped his childhood.
+        </p>
+        <p>
+        Even from a young age, he was known for his intelligence and curiosity.
+        </p>
+        <img src="Pics/IMG_0004.jpg" alt="U Bo Htwe as a child" style="width: 90%; height: auto; border-radius: 10px; ">
+    </div>
+</div>
+
+<!-- Education -->
+<div class="container left">
+    <div class="content">
+        <h2>University Graduate</h2>
+        <p>
+        At a time when very few from the village pursued higher education,
+        he worked hard, lived at a monastery, and followed his dream of becoming a graduate,eventually graduated with a university degree(Degree in History).
+        </p>
+        <p>
+        His achievement became a great pride for his family and the village.
+        </p>
+        <img src="Pics/IMG_8069.JPG" alt="U Bo Htwe with his university degree" style="width: 100%; height: auto; border-radius: 10px;  ">
+    </div>
+</div>
+
+<!-- Many Roles -->
+<div class="container right">
+    <div class="content">
+        <h2>A Man With Many Lives</h2>
+        <p>Throughout his life, he worked in many roles:</p>
+
+        <ul>
+            <li>Government Forest Office</li>
+            <li>Motorcycle Taxi Driver</li>
+            <li>Writer</li>
+            <li>Song Writer</li>
+        </ul>
+
+        <p>
+        Each chapter reflected resilience and adaptability through changing times.
+        </p>
+
+        <img src="Pics/IMG_6443.jpg" alt="U Bo Htwe in his later years" style="width: 100%; height: auto; border-radius: 10px; ">
+    </div>
+</div>
+
+<!-- Politics -->
+<div class="container left">
+    <div class="content">
+        <h2>Political Life</h2>
+        <p>
+        With a passion for society and the people, he later entered politics
+        and served the community in another meaningful way.
+        </p>
+
+        <img src="Pics/IMG_2747.JPG" alt="U Bo Htwe in politics" style="width: 100%; height: auto; border-radius: 10px; ">
+    </div>
+</div>
+
+<!-- Retirement -->
+<div class="container right">
+    <div class="content">
+        <h2>Retirement</h2>
+        <p>
+        After decades of experience, hard work, and service,
+        he is now enjoying retirement.
+        </p>
+        <p>
+        His story continues through the memories, wisdom,
+        and legacy he leaves behind.
+        </p>
+        <img src="Pics/1f38b6c74c8e0b0c4ea67178cab47a54.jpeg" alt="U Bo Htwe in retirement" style="width: 100%; height: auto; border-radius: 10px;  ">
+    </div>
+</div>
+
+</section>
+
+<footer>
+<p>Family Dynasty Project</p>
+</footer>
+
+  <script>
+
+const timelineItems = document.querySelectorAll(".container");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+
+    });
+
+}, { threshold: 0.2 });
+
+timelineItems.forEach(item => {
+    observer.observe(item);
+});
+
+</script>
+
 </body>
 </html>

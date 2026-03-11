@@ -15,6 +15,25 @@ body{
     z-index:9999;
 }
 
+#musicBtn{
+    position: fixed;
+    top: 80px;   /* below translate bar */
+    right: 30px;
+    font-size: 18px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+#musicBtn:hover{
+    background-color: #222;
+}
+
 body{
 top:0px !important;
 }

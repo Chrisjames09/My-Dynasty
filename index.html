@@ -6,8 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <header class="hero">
 
+    <button id="musicBtn" onclick="toggleMusic()">🎵 Play/Pause Music</button>
+
+<audio id="bgMusic" loop>
+    <source src="Music/1990 [Offical Lyrics Video]_Shine ရှိုင်း.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+let music = document.getElementById("bgMusic");
+let btn = document.getElementById("musicBtn");
+
+function toggleMusic(){
+    if(music.paused){
+        music.play();
+        btn.innerHTML = "🔇 Stop Music";
+    } else {
+        music.pause();
+        btn.innerHTML = "🎵 Play Music";
+    }
+}
+</script>
     <div class="hero-text">
-        <h1>My Family Diary</h1>
+        <h1>My Family Dynasty</h1>
         <p style="color: rgb(35, 9, 50);">Our story, our history, our legacy.</p>
         <div>
             <img src="Pics/FamilyPhoto.JPG" alt="Family Photo" style="width: 600px; height: auto; border-radius: 10px;">
@@ -15,6 +35,7 @@
         
     </div>
     
+   
 
 </header>
 
@@ -34,6 +55,11 @@ function googleTranslateElementInit() {
 <body>
     
 
+<script>
+function playMusic(){
+document.getElementById("bgMusic").play();
+}
+</script>
 <div class="description">
 
 <h2>About Our Family</h2>
