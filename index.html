@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <div id="google_translate_element"></div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <header class="hero">
 
     <div class="hero-text">
-        <h1>My Family Dynasty</h1>
+        <h1>My Family Diary</h1>
         <p style="color: rgb(35, 9, 50);">Our story, our history, our legacy.</p>
         <div>
             <img src="Pics/FamilyPhoto.JPG" alt="Family Photo" style="width: 600px; height: auto; border-radius: 10px;">
@@ -19,6 +20,17 @@
 
     <link rel="stylesheet" href="index.css">
 </head>
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {pageLanguage: 'en', includedLanguages: 'my,en'},
+    'google_translate_element'
+  );
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <body>
     
 

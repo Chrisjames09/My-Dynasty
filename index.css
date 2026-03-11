@@ -7,6 +7,12 @@ body{
 }
 
 /* Hero Section */
+#google_translate_element {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
 
 .hero{
     width:100%;
