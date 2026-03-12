@@ -1,184 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<p style="display: block;"><b><a href="index.html">Back to Home Page</a></b></p>
-
-<div id="google_translate_element"></div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>U Bo Htwe | Life Timeline</title>
-
-<link rel="stylesheet" href="father.css">
-
+    <title>U Bo Htwe | Life Timeline</title>
+    <link rel="stylesheet" href="father.css">
 </head>
 
 <body>
-  
+
+<div style="position:fixed; top:20px; right:20px; z-index:1000;">
+    <button onclick="setLang('en')">English</button>
+    <button onclick="setLang('my')">မြန်မာ</button>
+</div>
+
+<p style="display: block;"><b><a href="index.html">Back to Home Page</a></b></p>
 
 <header class="hero">
-    <h1>The Life of U Bo Htwe</h1>
-    <p>From Kyauk Sin Village to a Life of Many Journeys</p>
+    <h1>
+        <span class="en">The Life of U Bo Htwe</span>
+        <span class="my">ဦးဘိုထွေး၏ ဘဝဇာတ်ကြောင်း</span>
+    </h1>
+    <p>
+        <span class="en">From Kyauk Sin Village to a Life of Many Journeys</span>
+        <span class="my">ကျောက်ဆင်ရွာမှ စတင်ပြီး ဘဝခရီးများစွာကို ဖြတ်သန်းခဲ့သောသူ</span>
+    </p>
 </header>
 
-    <button id="musicBtn" onclick="toggleMusic()">He composed this Song</button>
+<button id="musicBtn" onclick="toggleMusic()">
+    <span class="en">He composed this Song</span>
+    <span class="my">ဤသီချင်းကို သူကိုယ်တိုင် ရေးစပ်ခဲ့သည်</span>
+</button>
 
 <audio id="bgMusic" loop>
     <source src="Music/Kha Yaung Lan Moh.mp3" type="audio/mpeg">
 </audio>
 
-<script>
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    {pageLanguage: 'en', includedLanguages: 'my,en'},
-    'google_translate_element'
-  );
-}
-</script>
-
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<script>
-let music = document.getElementById("bgMusic");
-let btn = document.getElementById("musicBtn");
-
-function toggleMusic(){
-    if(music.paused){
-        music.play();
-        btn.innerHTML = "🔇 Stop Music";
-    } else {
-        music.pause();
-        btn.innerHTML = "🎵 Play Music";
-    }
-}
-</script>
 <section class="timeline">
 
-<!-- Birth -->
-<div class="container left">
-    <div class="content">
-        <h2>1970 — A Beginning</h2>
-        <p>
-        Born on <b>July 23, 1970</b><br>
-        (ဝါဆိုလဆုတ် ၅ ရက် ၁၃၃၂)
-        </p>
-        <p>
-        In the small fishing village of <b>Kyauk Sin</b>, a boy was born who
-        would later become one of the few people from the village to graduate
-        with a university degree.
-        </p>
-        <img src="Pics/IMG_2730.JPG" alt="U Bo Htwe as a child" style="width: 100%; height: auto; border-radius: 10px;">
+    <div class="container left">
+        <div class="content">
+            <h2>
+                <span class="en">1970 — A Beginning</span>
+                <span class="my">၁၉၇၀ — အစပြုခြင်း</span>
+            </h2>
+            <p>
+                <span class="en">Born on <b>July 23, 1970</b> (ဝါဆိုလဆုတ် ၅ ရက် ၁၃၃၂)</span>
+                <span class="my">မွေးသက္ကရာဇ် - <b>၁၉၇၀ ခုနှစ်၊ ဇူလိုင်လ ၂၃ ရက်</b> (ဝါဆိုလဆုတ် ၅ ရက် ၁၃၃၂)</span>
+            </p>
+            <p>
+                <span class="en">In the small fishing village of <b>Kyauk Sin</b>, a boy was born who would later become one of the few people from the village to graduate with a university degree.</span>
+                <span class="my"><b>ကျောက်ဆင်</b> ဆိုတဲ့ တံငါရွာလေးမှာ မွေးဖွားခဲ့တဲ့ ဒီကလေးငယ်ဟာ နောင်တစ်ချိန်မှာတော့ တစ်ရွာလုံးမှာ လက်ချိုးရေတွက်လို့ရတဲ့ ဘွဲ့ရပညာတတ်တစ်ယောက် ဖြစ်လာခဲ့ပါတယ်။</span>
+            </p>
+            <img src="Pics/IMG_2730.JPG" alt="U Bo Htwe as a child" style="width: 100%; height: auto; border-radius: 10px;">
+        </div>
     </div>
-</div>
 
-<!-- Childhood -->
-<div class="container right">
-    <div class="content">
-        <h2>Childhood</h2>
-        <p>
-        Growing up in Kyauk Sin, life revolved around the sea.
-        Boats, fishing nets, and the rhythm of village life shaped his childhood.
-        </p>
-        <p>
-        Even from a young age, he was known for his intelligence and curiosity.
-        </p>
-        <img src="Pics/IMG_0004.jpg" alt="U Bo Htwe as a child" style="width: 90%; height: auto; border-radius: 10px; ">
+    <div class="container right">
+        <div class="content">
+            <h2>
+                <span class="en">Childhood</span>
+                <span class="my">ကလေးဘဝ</span>
+            </h2>
+            <p>
+                <span class="en">Growing up in Kyauk Sin, life revolved around the sea. Boats, fishing nets, and the rhythm of village life shaped his childhood. Even from a young age, he was known for his intelligence and curiosity.</span>
+                <span class="my">ကျောက်ဆင်ရွာမှာ ကြီးပြင်းခဲ့ရတဲ့ သူ့ရဲ့ကလေးဘဝဟာ ပင်လယ်ပြင်၊ လှေတွေ၊ ပိုက်ကွန်တွေနဲ့ ကျေးလက်ရွာရဲ့ အငွေ့အသက်တွေကြားမှာပဲ ပုံဖော်ခဲ့တာပါ။ ငယ်စဉ်ကတည်းက သူဟာ ဉာဏ်ရည်ထက်မြက်ပြီး စူးစမ်းလိုစိတ်ရှိသူအဖြစ် လူသိများခဲ့ပါတယ်။</span>
+            </p>
+            <img src="Pics/IMG_0004.jpg" alt="U Bo Htwe as a child" style="width: 90%; height: auto; border-radius: 10px;">
+        </div>
     </div>
-</div>
 
-<!-- Education -->
-<div class="container left">
-    <div class="content">
-        <h2>University Graduate</h2>
-        <p>
-        At a time when very few from the village pursued higher education,
-        he worked hard, lived at a monastery, and followed his dream of becoming a graduate,eventually graduated with a university degree(Degree in History).
-        </p>
-        <p>
-        His achievement became a great pride for his family and the village.
-        </p>
-        <img src="Pics/IMG_8069.JPG" alt="U Bo Htwe with his university degree" style="width: 100%; height: auto; border-radius: 10px;  ">
+    <div class="container left">
+        <div class="content">
+            <h2>
+                <span class="en">University Graduate</span>
+                <span class="my">တက္ကသိုလ်ဘွဲ့ရတစ်ဦး</span>
+            </h2>
+            <p>
+                <span class="en">At a time when very few from the village pursued higher education, he worked hard, lived at a monastery, and followed his dream of becoming a graduate, eventually graduating with a university degree (Degree in History).</span>
+                <span class="my">အဆင့်မြင့်ပညာသင်ကြားဖို့ ခဲယဉ်းတဲ့ခေတ်ကာလမှာ သူဟာ ဘုန်းတော်ကြီးကျောင်းမှာ နေထိုင်ရင်း ကြိုးစားအားထုတ်ခဲ့ပါတယ်။ နောက်ဆုံးမှာတော့ သူဖြစ်ချင်တဲ့ အိပ်မက်အတိုင်း သမိုင်းအထူးပြုဖြင့် တက္ကသိုလ်ဘွဲ့ကို ရရှိခဲ့ပါတယ်။</span>
+            </p>
+            <p>
+                <span class="en">His achievement became a great pride for his family and the village.</span>
+                <span class="my">ဒီအောင်မြင်မှုဟာ သူ့မိသားစုအတွက်သာမက တစ်ရွာလုံးအတွက်ပါ ဂုဏ်ယူစရာ မှတ်တိုင်တစ်ခု ဖြစ်ခဲ့ရပါတယ်။</span>
+            </p>
+            <img src="Pics/IMG_8069.JPG" alt="U Bo Htwe with his university degree" style="width: 100%; height: auto; border-radius: 10px;">
+        </div>
     </div>
-</div>
 
-<!-- Many Roles -->
-<div class="container right">
-    <div class="content">
-        <h2>A Man With Many Lives</h2>
-        <p>Throughout his life, he worked in many roles:</p>
-
-        <ul>
-            <li>Government Forest Office</li>
-            <li>Motorcycle Taxi Driver</li>
-            <li>Writer</li>
-            <li>Song Writer</li>
-        </ul>
-
-        <p>
-        Each chapter reflected resilience and adaptability through changing times.
-        </p>
-
-        <img src="Pics/IMG_6443.jpg" alt="U Bo Htwe in his later years" style="width: 100%; height: auto; border-radius: 10px; ">
+    <div class="container right">
+        <div class="content">
+            <h2>
+                <span class="en">A Man With Many Lives</span>
+                <span class="my">ဘဝပေါင်းများစွာကို ပိုင်ဆိုင်သူ</span>
+            </h2>
+            <p>
+                <span class="en">Throughout his life, he worked in many roles:</span>
+                <span class="my">သူ့ဘဝတစ်လျှောက်မှာ မတူညီတဲ့ လုပ်ငန်းခွင်နယ်ပယ်များစွာမှာ တာဝန်ထမ်းဆောင်ခဲ့ပါတယ် -</span>
+            </p>
+            <ul>
+                <li><span class="en">Government Forest Office</span><span class="my">သစ်တောဦးစီးဌာန ဝန်ထမ်း</span></li>
+                <li><span class="en">Motorcycle Taxi Driver</span><span class="my">ကယ်ရီမောင်းသူ</span></li>
+                <li><span class="en">Writer</span><span class="my">စာရေးဆရာ</span></li>
+                <li><span class="en">Song Writer</span><span class="my">တေးရေးဆရာ</span></li>
+            </ul>
+            <p>
+                <span class="en">Each chapter reflected resilience and adaptability through changing times.</span>
+                <span class="my">ဘဝရဲ့ အခန်းကဏ္ဍတိုင်းဟာ ပြောင်းလဲလာတဲ့ ခေတ်စနစ်တွေကြားမှာ ကြံ့ကြံ့ခံနိုင်မှုနဲ့ လိုက်လျောညီထွေရှိမှုတွေကို ထင်ဟပ်စေပါတယ်။</span>
+            </p>
+            <img src="Pics/IMG_6443.jpg" alt="U Bo Htwe in his later years" style="width: 100%; height: auto; border-radius: 10px;">
+        </div>
     </div>
-</div>
 
-<!-- Politics -->
-<div class="container left">
-    <div class="content">
-        <h2>Political Life</h2>
-        <p>
-        With a passion for society and the people, he later entered politics
-        and served the community in another meaningful way.
-        </p>
-
-        <img src="Pics/IMG_2747.JPG" alt="U Bo Htwe in politics" style="width: 100%; height: auto; border-radius: 10px; ">
+    <div class="container left">
+        <div class="content">
+            <h2>
+                <span class="en">Political Life</span>
+                <span class="my">နိုင်ငံရေးဘဝ</span>
+            </h2>
+            <p>
+                <span class="en">With a passion for society and the people, he later entered politics and served the community in another meaningful way.</span>
+                <span class="my">လူ့အဖွဲ့အစည်းနဲ့ ပြည်သူလူထုအပေါ် ထားရှိတဲ့ စေတနာကြောင့် နောက်ပိုင်းမှာ နိုင်ငံရေးလောကထဲကို ဝင်ရောက်ခဲ့ပြီး မိမိရပ်ရွာနဲ့ ပတ်ဝန်းကျင်အတွက် အဓိပ္ပာယ်ရှိတဲ့ ဝန်ဆောင်မှုတွေကို ပေးဆပ်ခဲ့ပါတယ်။</span>
+            </p>
+            <img src="Pics/IMG_2747.JPG" alt="U Bo Htwe in politics" style="width: 100%; height: auto; border-radius: 10px;">
+        </div>
     </div>
-</div>
 
-<!-- Retirement -->
-<div class="container right">
-    <div class="content">
-        <h2>Retirement</h2>
-        <p>
-        After decades of experience, hard work, and service,
-        he is now enjoying retirement.
-        </p>
-        <p>
-        His story continues through the memories, wisdom,
-        and legacy he leaves behind.
-        </p>
-        <img src="Pics/1f38b6c74c8e0b0c4ea67178cab47a54.jpeg" alt="U Bo Htwe in retirement" style="width: 100%; height: auto; border-radius: 10px;  ">
+    <div class="container right">
+        <div class="content">
+            <h2>
+                <span class="en">Retirement</span>
+                <span class="my">အနားယူချိန်</span>
+            </h2>
+            <p>
+                <span class="en">After decades of experience, hard work, and service, he is now enjoying retirement.</span>
+                <span class="my">ဆယ်စုနှစ်များစွာ အတွေ့အကြုံတွေ၊ ကြိုးစားမှုတွေနဲ့ ပေးဆပ်မှုတွေပြီးနောက်မှာတော့ အခုအခါမှာ အေးအေးချမ်းချမ်း အနားယူနေပြီ ဖြစ်ပါတယ်။</span>
+            </p>
+            <p>
+                <span class="en">His story continues through the memories, wisdom, and legacy he leaves behind.</span>
+                <span class="my">သူ့ရဲ့ ဘဝဇာတ်ကြောင်းဟာ သူချန်ရစ်ခဲ့တဲ့ အမှတ်တရတွေ၊ အသိပညာဗဟုသုတတွေနဲ့ အမွေအနှစ်တွေကတစ်ဆင့် ဆက်လက်ရှင်သန်နေဦးမှာပါ။</span>
+            </p>
+            <img src="Pics/1f38b6c74c8e0b0c4ea67178cab47a54.jpeg" alt="U Bo Htwe in retirement" style="width: 100%; height: auto; border-radius: 10px;">
+        </div>
     </div>
-</div>
 
 </section>
 
 <footer>
-<p>Family Dynasty Project</p>
+    <p>Family Dynasty Project</p>
 </footer>
 
-  <script>
+<script>
+    let music = document.getElementById("bgMusic");
+    let btn = document.getElementById("musicBtn");
 
-const timelineItems = document.querySelectorAll(".container");
-
-const observer = new IntersectionObserver((entries) => {
-
-    entries.forEach(entry => {
-
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
+    function toggleMusic() {
+        if (music.paused) {
+            music.play();
+            btn.innerHTML = "🔇 Stop Music";
+        } else {
+            music.pause();
+            btn.innerHTML = "🎵 Play Music";
         }
+    }
 
+    function setLang(lang) {
+        const en = document.querySelectorAll(".en");
+        const my = document.querySelectorAll(".my");
+
+        if (lang === "my") {
+            en.forEach(e => e.style.display = "none");
+            my.forEach(e => e.style.display = "inline");
+        } else {
+            en.forEach(e => e.style.display = "inline");
+            my.forEach(e => e.style.display = "none");
+        }
+    }
+
+    // Set default language
+    setLang("en");
+
+    const timelineItems = document.querySelectorAll(".container");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    timelineItems.forEach(item => {
+        observer.observe(item);
     });
-
-}, { threshold: 0.2 });
-
-timelineItems.forEach(item => {
-    observer.observe(item);
-});
-
 </script>
 
 </body>
