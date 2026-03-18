@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ma Ma Gyi | Life Timeline Journey Continues...</title>
+
+<link rel="stylesheet" href="father.css">
+
 </head>
+
 <body>
-    <p>"ဒါက မပြီးသေးဘူး၊ မနက်ဖြန်လောက်မှ ပြန်ကြည့်လိုက်၊ ပြီးချင်မှလည်း ပြီးမှာနော် lol!"</p>
+
+<!-- Language Switch -->
+<div style="position:fixed; top:20px; right:20px; z-index:1000;">
+<button onclick="setLang('en')">English</button>
+<button onclick="setLang('my')">မြန်မာ</button>
+</div>
+
+<p><b><a href="index.html">Back to Home Page</a></b></p>
+
+<header class="hero">
+
+<h1>
+<span class="en">Story is yet to be Written!</span>
+<span class="my">Story is yet to be Written!
+</span>
+</h1>
+
+</header>
+
+<body>
+    <span class="en"><p>You really don't expect me to brag about myself,do You?</p>
+    <p>I don't think I have a story to tell about myself yet my story is yet to be written so maybe in the future, I will come back here to update my storyxD.</p>
+<p>See you Later!</p></span>
+<span class="my">
+    <p>ကျွန်တော်က ကိုယ့်ကိုယ်ကိုယ် ပြန်ပြီး ကြွားလုံးထုတ်နေမယ်လို့တော့ တကယ်ကြီး မမျှော်လင့်ထားဘူး မဟုတ်လား?</p>
+    <p>ကိုယ့်အကြောင်းကိုယ် ပြန်ပြောပြဖို့ ဇာတ်လမ်းကြီးကြီးမားမား အခုထိ မရှိသေးဘူးလို့ ထင်တာပဲ။ ကျွန်တော့်ရဲ့ ဇာတ်လမ်းက အခုမှ စပြီး ရေးရဦးမှာဆိုတော့... နောင်တစ်ချိန်ကျမှပဲ ဒီနေရာလေးကို ပြန်လာပြီး ကျွန်တော့်ရဲ့ အကြောင်းတွေကို အသစ်ပြန်ပြင်ပြီး ရေးလိုက်ပါ့မယ် xD။</p>
+</span>
+</body>
+
+<footer>
+
+<p>
+<span class="en">Family Dynasty Project</span>
+<span class="my">Family Dynasty Project</span>
+</p>
+
+</footer>
+
+
+<script>
+
+
+
+
+
+
+function setLang(lang){
+
+const en = document.querySelectorAll(".en");
+const my = document.querySelectorAll(".my");
+
+if(lang==="my"){
+en.forEach(e=>e.style.display="none");
+my.forEach(e=>e.style.display="inline");
+}
+else{
+en.forEach(e=>e.style.display="inline");
+my.forEach(e=>e.style.display="none");
+}
+
+}
+
+setLang("en");
+
+
+const timelineItems = document.querySelectorAll(".container");
+
+const observer = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+
+});
+
+},{threshold:0.2});
+
+timelineItems.forEach(item=>{
+observer.observe(item);
+});
+
+</script>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
